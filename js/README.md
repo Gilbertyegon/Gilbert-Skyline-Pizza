@@ -1,7 +1,4 @@
-# SKYLINE-PIZZA
-About Germanian pizza is a website application that helps customer make their pizza order and can also make oders anywhere because it provides an option for delivery.
-## Author
-Gilbert Yegon
+
 ## Description
 it is about a basic webpage where programmers and users get to download musics,videos
 ### Prerequisites
@@ -30,5 +27,5 @@ our website is build with little knowledge in the three language,it is however,o
 you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests.
 software methods and tools refer herehttp://www.methodsandtools.com/archive/archive.php?id=33.
 ### Live Site
-View [live]()
+View [live](https://gilbertyegon.github.io/Gilbert-Skyline-Pizza/)
 ### Licence
