@@ -1,5 +1,5 @@
 # SKYLINE-PIZZA
-About Germanian pizza is a website application that helps customer make their pizza order and can also make oders anywhere because it provides an option for delivery.
+About Skyline pizza is a website application that helps customer make their pizza order and can also make oders anywhere because it provides an option for delivery.
 ## Author
 ### Gilbert Yegon
 ## Description
