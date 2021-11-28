@@ -1,0 +1,187 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Skyline-Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <style>
+            .rel-img{
+              position: relative;
+            }
+            .overlay-txt1{
+              position: absolute;
+              bottom:85%;
+               margin-left: 500px;
+              color:brown !important;
+              font-family: 'Dancing Script', cursive;
+             }
+             .overlay-txt2{
+              position: absolute;
+              bottom:75%;
+               margin-left: 550px;
+              color:brown !important;
+              font-family: 'Dancing Script', cursive;
+             }
+             .bt{
+                margin-left: 550px;
+                margin-bottom: 50px;
+                position: relative;
+             }
+          </style>
+</head>
+<nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: yellowgreen;font-family: 'Dancing Script', cursive; " href="#">
+        <img src="https://image.freepik.com/free-photo/mixed-pizza-table_140725-5329.jpg" alt="" 
+        width="30" height="24" class="d-inline-block align-text-top" style="border-radius: 50%;border-color: brown; border-style: solid;">
+        <strong>Skyline-pizza</strong>
+      </a>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container " style="background-color: cornsilk;">
+    <div class="row">
+        <div class="col-lg-8">
+  <div id="carouselExampleControls "  class="carousel slide mt-3 "  data-ride="carousel">
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <img class="d-block w-100 rel-img" src="https://image.freepik.com/free-vector/pizza-with-basil-leaves-tomatoes-sauce-mozzarella-cheese-mushrooms-black-olives_1268-14509.jpg" alt="Second slide">
+        <h3 class="overlay-txt1">WELCOME TO</h3>
+        <h3 class="overlay-txt2">SKYLINE</h3>
+        <button type="button " class="btn btn-warning bt" id="addToCartPizza">BUY NOW</button> 
+    </div>
+    
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+
+   
+    </a>
+  </div>
+</div>
+<div class="col-lg-4 mt-3" style="border-color: darksalmon; border-style: solid; padding:1%;">
+
+  <nav class="cart">
+        <h3 class="ml-5"> Order Total: <span style="color: brown;">0Ksh</span></h3>
+        <ol id="listOfOrders">
+        </ol>
+        <a class="btnStyle btnStyle3 finishOrder ">Finish Order</a>
+      </nav>
+</div>
+</section>
+
+
+<div id="checkOrderPizza" title="Pizza" class="orderstyle">
+    <h3 class="listHeading">Size:</h3>
+    <ul class="size" id="recipe1">
+      <p>Click on checkbox to uncheck</p>
+      <li><input type="checkbox" value="500" checked>Small - <span class="amount">ksh.500</span></li>
+      <li><input type="checkbox" value="750">Medium - <span class="amount">ksh.750</span></li>
+      <li><input type="checkbox" value="1000">Large - <span class="amount">ksh.1000</span></li>
+
+
+      <h3 class="listHeading">Toppings:</h3>
+
+      <li><input type="checkbox" value="70">Pepperoni - <span class="amount">ksh.70</span></li>
+      <li><input type="checkbox" value="100">Mushrooms - <span class="amount">ksh.100</span></li>
+      <li><input type="checkbox" value="85">Onions - <span class="amount">ksh.85</span></li>
+      <li><input type="checkbox" value="120">pancetta- <span class="amount">ksh.120</span></li>
+      <h3 class="listHeading">Crust:</h3>
+
+      <li><input type="checkbox" value="150">Stuffed - <span class="amount">ksh.150</span></li>
+      <li><input type="checkbox" value="130" checked>Gluten-free - <span class="amount">ksh.130</span></li>
+      <li><input type="checkbox" value="100">Crispy - <span class="amount">ksh.100</span></li>
+
+
+    </ul>
+    <a class="btnStyle3 btnStyle addIngredient">Add</a>
+    <a class="btnStyle listOver">Done</a>
+    <h4 class="totalDialog" id="totalDialog1">Total: <span>750</span>ksh</h4>
+
+  </div>
+
+  <div id="finishOrderDialog" title="Confirm Order">
+    <div id="finalOrderList">
+      <h3>Your Orders:</h3>
+      <ol></ol>
+    </div>
+    <div id="buyerInfo">
+      <input type="text" id="buyerName" placeholder="Enter Name">
+      <input type="text" id="buyerNumber" placeholder="Enter Phone Number">
+      <input type="text" id="buyerAddress" placeholder="Location">
+
+      <a class="btnStyle order">Order!</a>
+    </div>
+  </div>
+
+  <div id="thanksMessage">
+    <h1>Thank you for the order</h1>
+    <h4>We will have it delivered soon to <span class="text-success" id="guests"></span></h4>
+  </div>
+<section>
+  
+<footer class="pt-4 mt-3" style="background-color: black;" >
+
+    <div class="container" style="background-color: black;">
+ 
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f" style="color: blue;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter" style="color: navy;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g" style="color: orangered;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in" style="color: orchid;"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble" style="color: purple;"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" style="background-color: black;color: white;"> © 2021 Copyright:
+      <a href="#"> SKYLINE-PIZZA</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+  </section>
+<body>
+    <script src="js/index.js"></script>
+  </body>
+</html>
