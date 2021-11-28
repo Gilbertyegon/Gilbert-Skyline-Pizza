@@ -32,9 +32,7 @@ function size(x) {
 });
 
 };
-	function checkboxChange(x) {
-		var priceDialog = 0;
-
+	
       $("#recipe2"+x).children("li").children("input").each(function () {
         if($(this).is(":checked")){
         addedValue = parseInt($(this).attr('value'), 10);
