@@ -32,7 +32,9 @@ function size(x) {
 });
 
 };
-	
+function checkboxChange(x) {
+	var priceDialog = 0;
+
       $("#recipe2"+x).children("li").children("input").each(function () {
         if($(this).is(":checked")){
         addedValue = parseInt($(this).attr('value'), 10);
@@ -40,10 +42,10 @@ function size(x) {
       }
     });
 
-		$("#recipe"+x).children("li").children("input").each(function () {
-			if($(this).is(":checked")){
-				addedValue = parseInt($(this).attr('value'), 10);
-        priceDialog += addedValue;
+	$("#recipe"+x).children("li").children("input").each(function () {
+		if($(this).is(":checked")){
+			addedValue = parseInt($(this).attr('value'), 10);
+	priceDialog += addedValue;
 			}
 
 				$("#totalDialog"+x+">span").text(priceDialog);
