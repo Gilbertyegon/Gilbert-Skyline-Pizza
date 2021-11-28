@@ -3,7 +3,7 @@ About Skyline pizza is a website application that helps customer make their pizz
 ## Author
 ### Gilbert Yegon
 ## Description
-it is about a basic webpage where programmers and users get to download musics,videos
+it is about a basic webpage where programmers and users get to download musics, videos
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
