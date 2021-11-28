@@ -14,6 +14,7 @@ To access this project on your local files, you can clone it using these steps
 1. Use this command to clone `$ https://github.com/Gilbertyegon/Gilbert-Skyline-Pizza
 1. This will clone the repositoty into your local folder
 ### Techonogies used
+1. HTML
 This project is under the  [MIT](licence) licence.
 ###  CONTACT US
 if you have any issue with our website,dont hesitate to contact us gilbert.yegon@student.moringaschool.com
