@@ -24,7 +24,7 @@ To access this project on your local files, you can clone it using these steps
 7. jQuery
 This project is under the  [MIT](licence) licence.
 ###  CONTACT US
-if you have any issue with our website,dont hesitate to contact us amos.kimutai@student.moringaschool.com
+if you have any issue with our website,dont hesitate to contact us gilbert.yegon@student.moringaschool.com
 ### contributing
 our website is build with little knowledge in the three language,it is however,open to anyone who would wish to contribute to our project.
 you can also refer here https://stackoverflow.com/questions/8503559/what-is-linting to learn more and run tests.
