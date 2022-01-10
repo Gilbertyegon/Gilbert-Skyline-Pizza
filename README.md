@@ -20,7 +20,7 @@ To access this project on your local files, you can clone it using these steps
 4. Git
 5. Bootstrap
 6. Jquery
-This project is under the  [MIT](licence) licence.
+
 ###  CONTACT US
 if you have any issue with our website,dont hesitate to contact us gilbert.yegon@student.moringaschool.com
 ### contributing
